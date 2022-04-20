@@ -448,7 +448,7 @@ The use of random number generation is an important part of the configuration an
 
 With  `random`, you can generate random numbers from low to high (inclusive). 
 
-You can generate a 3 x 3 matrix of random numbers between 0 and 1 with mean zero with:
+You can generate a 3 x 3 matrix of random numbers between 0 and 1 with mean 0.5 with:
 
 	  declare
 	    data   t_matrix;
