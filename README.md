@@ -1,5 +1,5 @@
 # Numo: The basics for beginners
-Welcome to the absolute beginner’s guide to Numo! If you have comments or suggestions, please don’t hesitate to [reach out](eljuancar@hotmail.com)!
+Welcome to the absolute beginner’s guide to Numo! If you have comments or suggestions, please don’t hesitate to [reach out](mailto:eljuancar@hotmail.com)!
 
 ## Welcome to Numo
 
