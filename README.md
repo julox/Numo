@@ -1,5 +1,4 @@
 # Numo: The basics for beginners
-
 Welcome to the absolute beginner’s guide to Numo! If you have comments or suggestions, please don’t hesitate to [reach out](eljuancar@hotmail.com)!
 
 ## Welcome to Numo
@@ -52,13 +51,13 @@ Numo gives you an enormous range of fast and efficient ways of creating matrixs 
 
 **Why use Numo ?**
 
-Numo matrix are faster and more compact than Oracle PL/SQL  tables. An matrix consumes less memory and is convenient to use. Oracle PL/SQL uses much less memory to store data and it provides a mechanism of specifying the data types. This allows the code to be optimized even further.
+Numo matrix are faster and more compact than Oracle PL/SQL  tables. a matrix consumes less memory and is convenient to use. Oracle PL/SQL uses much less memory to store data and it provides a mechanism of specifying the data types. This allows the code to be optimized even further.
 
 ## What is a matrix?
 
-A matrix is a central data structure of the Numo library. An matrix is a grid of values and it contains information about the raw data, how to locate an element, and how to interpret an element. It has a grid of elements that can be indexed in various ways. 
+A matrix is a central data structure of the Numo library. a matrix is a grid of values and it contains information about the raw data, how to locate an element, and how to interpret an element. It has a grid of elements that can be indexed in various ways. 
 
-An matrix can be indexed by a tuple of nonnegative decimals. The  `rank`  of the matrix is the number of dimensions. The  `shape`  of the matrix is a tuple of integers giving the size of the matrix along each dimension.
+a matrix can be indexed by a tuple of nonnegative decimals. The  `rank`  of the matrix is the number of dimensions. The  `shape`  of the matrix is a tuple of integers giving the size of the matrix along each dimension.
 
 One way we can initialize Numo matrixs is from Numo lists, using nested lists for two- or higher-dimensional data.
 
@@ -95,7 +94,7 @@ You can visualize your matrix this way:
 
 _Be aware that these visualizations are meant to simplify ideas and give you a basic understanding of Numo concepts and mechanics. matrixs and matrix operations are much more complicated than are captured here!_
 
-Besides creating an matrix from a sequence of elements, you can easily create an matrix filled with  `0`’s:
+Besides creating a matrix from a sequence of elements, you can easily create a matrix filled with  `0`’s:
 
 	  declare
 		a t_matrix;
@@ -108,7 +107,7 @@ output:
 
     | 0  0 |
 
-Or an matrix filled with  `1`’s:
+Or a matrix filled with  `1`’s:
 
 	  declare
 		a t_matrix;
@@ -121,7 +120,7 @@ output:
 
     | 1  1 |
 
-Or even an empty matrix! The function  `empty`  creates an matrix whose initial content is random and depends on the state of the memory. The reason to use  `empty`  over  `zeros`  (or something similar) is speed - just make sure to fill every element afterwards!
+Or even an empty matrix! The function  `empty`  creates a matrix whose initial content is random and depends on the state of the memory. The reason to use  `empty`  over  `zeros`  (or something similar) is speed - just make sure to fill every element afterwards!
 
 Create an empty matrix with 2 elements:
 
@@ -137,7 +136,7 @@ output:
 
     | 3.1  42 |
 
-You can create an matrix with a range of elements:
+You can create a matrix with a range of elements:
 
 	declare
 		a t_matrix;
@@ -150,7 +149,7 @@ output:
 
     | 0  1  2  3 |
 
-And even an matrix that contains a range of evenly spaced intervals. To do this, you will specify the  **first number**,  **last number**, and the  **step size**.
+And even a matrix that contains a range of evenly spaced intervals. To do this, you will specify the  **first number**,  **last number**, and the  **step size**.
 
 	declare
 		a t_matrix;
@@ -163,7 +162,7 @@ output:
 
     | 2  4  6  8 |
 
-You can also use  `no.linspace()`  to create an matrix with values that are spaced linearly in a specified interval:
+You can also use  `no.linspace()`  to create a matrix with values that are spaced linearly in a specified interval:
 
 	declare
 		a t_matrix;
@@ -233,7 +232,7 @@ You can quickly sort the numbers in ascending order with:
 
     | 1  2  3  4  5  6  7  8 |
 
-## How do you know the shape and size of an matrix?
+## How do you know the shape and size of a matrix?
 
 `dim`  will tell you the total number of elements of the matrix. This is the  _product_  of the elements of the matrix’s shape.
 
@@ -279,11 +278,11 @@ output:
 
 	2		
 
-## Can you reshape an matrix?
+## Can you reshape a matrix?
 
 **Yes!**
 
-Using  `reshape()`  will give a new shape to an matrix without changing the data. Just remember that when you use the reshape method, the matrix you want to produce needs to have the same number of elements as the original matrix. If you start with an matrix with 12 elements, you’ll need to make sure that your new matrix also has a total of 12 elements.
+Using  `reshape()`  will give a new shape to a matrix without changing the data. Just remember that when you use the reshape method, the matrix you want to produce needs to have the same number of elements as the original matrix. If you start with a matrix with 12 elements, you’ll need to make sure that your new matrix also has a total of 12 elements.
 
 If you start with this matrix:
 
@@ -298,7 +297,7 @@ output:
 
 	| 0 1 2 3 4 5 |
 
-You can use  `reshape()`  to reshape your matrix. For example, you can reshape this matrix to an matrix with three rows and two columns:
+You can use  `reshape()`  to reshape your matrix. For example, you can reshape this matrix to a matrix with three rows and two columns:
 
 	declare
 	  a t_matrix;
@@ -362,7 +361,7 @@ output:
 
 	| 1  4 | 
 
-Basic operations are simple with Numo. If you want to find the sum of the elements in an matrix, you’d use  `sum()`. This works for 1D matrixs, 2D matrixs, and matrixs in higher dimensions.
+Basic operations are simple with Numo. If you want to find the sum of the elements in a matrix, you’d use  `sum()`. This works for 1D matrixs, 2D matrixs, and matrixs in higher dimensions.
 
 	declare
 	  data   t_matrix;
@@ -379,7 +378,7 @@ output:
 
 ## Broadcasting
 
-There are times when you might want to carry out an operation between an matrix and a single number (also called  _an operation between a vector and a scalar_). For example, your matrix (we’ll call it “data”) might contain information about distance in miles but you want to convert the information to kilometers. You can perform this operation with:
+There are times when you might want to carry out an operation between a matrix and a single number (also called  _an operation between a vector and a scalar_). For example, your matrix (we’ll call it “data”) might contain information about distance in miles but you want to convert the information to kilometers. You can perform this operation with:
 
 	  declare
 	    data   t_matrix;
@@ -482,7 +481,7 @@ output:
 
 ## How to get unique items 
 
-You can find the unique elements in an matrix easily with  `no.difference`.
+You can find the unique elements in a matrix easily with  `no.difference`.
 
 For example, if you start with this matrix:
 
