@@ -500,7 +500,7 @@ you can use  `no.difference`  to print the unique values in your matrix:
 
 	| 16  18  19  15  20  14  17  11  13  12 |
 
-## Typical matrix operations: transpose, inverse and determinant 
+## Typical matrix operations: transpose, inverse, multiplication and determinant 
 
 It’s common to need to transpose your matrices. Numo matrix have the property  `t`  that allows you to transpose a matrix.
 
@@ -527,6 +527,26 @@ output:
 	| 0  3 |
 	| 1  4 |
 	| 2  5 |
+	
+try to multiplicate with `mul`:	
+
+
+    declare
+      a   t_matrix;
+      t_a t_matrix;
+      mul t_matrix;
+    begin
+      a   := no.arange(6);
+      a   := no.reshape(a,2, 3);
+      t_a := no.t(a);
+      mul := no.mul(a,t_a);
+      no.print(mul);
+    end;
+
+output:
+
+	|  5  14 |
+	| 14  50 |
 
 Same way for to have an inverse matrix, only using `inv`
 
