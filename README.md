@@ -1,7 +1,7 @@
 ![image](https://user-images.githubusercontent.com/13588572/164239192-26ff25c7-7096-4f90-b4c8-a05d10851674.png)
 
 # Numo: The basics for beginners
-Welcome to the absolute beginner’s guide to Numo! If you have comments or suggestions, please don’t hesitate to [reach out](mailto:eljuancar@hotmail.com)!
+Welcome to guide to Numo! If you have comments or suggestions, please don’t hesitate to [reach out](mailto:eljuancar@hotmail.com)!
 
 ## Welcome to Numo
 
